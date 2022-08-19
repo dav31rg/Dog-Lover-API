@@ -7,81 +7,40 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header>
     <div class="hero">header</div>
   </header>
   
   <main>
-
-
-<!----------------------------------------------------------------------------------- 
-  Galería
------------------------------------------------------------------------------------->
-    <section class="image-container">
+<!--------------------------------------------------------------------------------------------- 
+  Gallery Section
+---------------------------------------------------------------------------------------------->
+    <section class="img-container">
       <article>
-        <img id="img01" alt="Picture of a dog">
-        <div class="image-container_button">
-          <button id="btn01">Adopt</button>
-          <span>❤</span>
-        </div>
-      </article>
-      <article class="image-container">
-        <img id="img02" alt="Picture of a dog">
-        <div>
-          <button id="btn02">Adopt</button>
-          <span>❤</span>
-        </div>
-      </article>
-      <article class="image-container">
-        <img id="img03" alt="Picture of a dog">
-        <button id="btn03">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img04" alt="Picture of a dog">
-        <button id="btn04">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img05" alt="Picture of a dog">
-        <button id="btn05">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img06" alt="Picture of a dog">
-        <button id="btn06">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img07" alt="Picture of a dog">
-        <button id="btn07">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img08" alt="Picture of a dog">
-        <button id="btn08">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img09" alt="Picture of a dog">
-        <button id="btn09">Adopt</button>
-        <span>❤</span>
-      </article>
-      <article class="image-container">
-        <img id="img10" alt="Picture of a dog">
-        <button id="btn10">Adopt</button>
-        <span>❤</span>
-      </article>
+        <img width="150px" id="img01" alt="Picture of a random dog">
+        <button type="button" id="btn-reload" onclick="getDog()">Next</button>
+        <button type="button" id="btn">Like</button>
+      </article>      
     </section>
 
-<!----------------------------------------------------------------------------------- 
- Favorites
- ----------------------------------------------------------------------------------->
-  <section class="favorites-container" id="favorite">
-    <article>
-    </article>
+<!--------------------------------------------------------------------------------------------- 
+ Favorites Section
+---------------------------------------------------------------------------------------------->
+    <section class="fav-container" id="fav">
+    </section>
+
+<!--------------------------------------------------------------------------------------------- 
+ Upload Picture Section
+---------------------------------------------------------------------------------------------->
+  <section>
+    <form id="upForm">
+      <input type="file" id="file"  name="file">
+      <button type="button" onclick="upPic()">Upload</button>
+    </form>
   </section>
+
 
   </main>
   <footer></footer>
